@@ -1,0 +1,86 @@
+.holdlogo {
+  width: 200px;
+  height: 200px;
+  top: 0;
+  left: 0;
+  position: static;
+}
+
+.jimbag {
+  top: 100px;
+  left: 200px;
+  width: 200px;
+  height: 320px;
+  margin-left: auto 60px;
+  position: relative;
+  bottom: 70%;
+  transition: all 12.4s ease;
+}
+
+.jimbag:hover {
+  cursor: crosshair;
+}
+
+#btnControl {
+  display: none;
+}
+
+#btnControl:checked + label > img {
+  transform: skewY(100deg);
+  transition: all 2.4s ease;
+}
+
+.rotate {
+  animation: rotation 12s infinite linear;
+}
+
+.rotate:hover {
+  animation: rotation 0.25s infinite linear;
+}
+
+.centered {
+  position: fixed; /* or absolute */
+  top: 40%;
+  left: 50%;
+  transform: skewY(-31deg);
+  font-size: 25px;
+  transition: all 0.4s ease;
+}
+
+.centered:hover {
+  font-size: 27px;
+  transform: skewY(47deg);
+  transition: all 0.4s ease;
+}
+
+.link {
+  animation-duration: 15s;
+  animation-name: slidein;
+  left: 25%;
+  position: absolute;
+  color: #f00;
+  color: inherit;
+  text-decoration: none;
+}
+
+@keyframes rotation {
+  from {
+    transform: rotate(0deg);
+  }
+
+  to {
+    transform: rotate(359deg);
+  }
+}
+
+@keyframes slidein {
+  from {
+    margin-left: 100%;
+    width: 300%;
+  }
+
+  to {
+    margin-left: 0%;
+    width: 100%;
+  }
+}
