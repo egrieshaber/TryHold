@@ -40,7 +40,7 @@
 
 .centered {
   position: fixed; /* or absolute */
-  top: 30%;
+  top: 31%;
   left: 50%;
   transform: skewY(-31deg);
   font-size: 25px;
